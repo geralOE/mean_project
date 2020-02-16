@@ -26,6 +26,10 @@ En la siguiente arquitectura, se utilizan 3 contenedores:
 
 
 # Imágenes utilizadas
+- node:10
+- mongo:4.2.3
+
+
 Se requiere hacer pull de la siguiente imagen:
 
 docker pull mongo:4.2.3
