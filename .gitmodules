@@ -1,0 +1,6 @@
+[submodule "angular-front"]
+	path = angular-front
+	url = https://github.com/geralOE/angular-front.git
+[submodule "express-server"]
+	path = express-server
+	url = https://github.com/geralOE/express-server.git
