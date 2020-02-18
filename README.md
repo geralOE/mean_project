@@ -43,3 +43,5 @@ docker-compose up
 
 http://localhost:4200 <-aplicación angular
 
+# Postman
+En la documentación se escuentra un archivo json que se puede importar a postman para probar los servicios
