@@ -1,0 +1,344 @@
+{
+	"info": {
+		"_postman_id": "bf6aa1f1-4b29-45d6-84cf-c5fb677b09e4",
+		"name": "mis_teams",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Miembros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/member/all",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"member",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Miembro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/member/detail/5e48e7aaaa432b00122b7e57",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"member",
+						"detail",
+						"5e48e7aaaa432b00122b7e57"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teams",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/team?limit=20",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"team"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Team",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/team/detail/5e48be130a0b5f00120c4d1f",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"team",
+						"detail",
+						"5e48be130a0b5f00120c4d1f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert team",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "team_name",
+							"value": "Equipo 20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{local}}/team",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"team"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert member",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "member_name",
+							"value": "María Luisa",
+							"type": "text"
+						},
+						{
+							"key": "e_mail",
+							"value": "maria@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "team_id",
+							"value": "5e48be130a0b5f00120c4d1f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{local}}/member",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update member",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "member_name",
+							"value": "GeraldineMacias",
+							"type": "text"
+						},
+						{
+							"key": "e_mail",
+							"value": "geral.oe@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "team_id",
+							"value": "5e48be130a0b5f00120c4d1f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{local}}/member/update/5e48e7aaaa432b00122b7e57",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"member",
+						"update",
+						"5e48e7aaaa432b00122b7e57"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete team",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{local}}/team/delete/5e48b66a38106b00128c180a",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"team",
+						"delete",
+						"5e48b66a38106b00128c180a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete member",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{local}}/member/delete/5e48eb28221b680012430516",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"member",
+						"delete",
+						"5e48eb28221b680012430516"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update team",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "team_name",
+							"value": "Equipo 01",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{local}}/team/update/5e48be130a0b5f00120c4d1f",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"team",
+						"update",
+						"5e48be130a0b5f00120c4d1f"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/members",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
