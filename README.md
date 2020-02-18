@@ -1,4 +1,4 @@
-# Project Title
+# Mean Project
 
 Prueba práctica: Desarrollo  de aplicación API REST para administrar registros de teams y sus miembros
 
